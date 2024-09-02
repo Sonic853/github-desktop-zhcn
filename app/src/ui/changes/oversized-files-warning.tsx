@@ -39,13 +39,13 @@ export class OversizedFiles extends React.Component<IOversizedFilesProps> {
           <p>
             以下文件大小超过 100MB。
             <strong>
-              如果您提交这些文件，那就没办法推送到 GitHub.com 了。
+              如果您提交这些文件，将无法推送到 GitHub.com。
             </strong>
           </p>
           {this.renderFileList()}
           <p className="recommendation">
-            推荐不要提交这么大的文件，或者可以使用{' '}
-            <LinkButton uri={GitLFSWebsiteURL}>Git LFS</LinkButton> 来在 GitHub
+            我们建议您避免提交这些文件，或者可以使用{' '}
+            <LinkButton uri={GitLFSWebsiteURL}>Git LFS</LinkButton> 以在 GitHub
             上储存大文件。
           </p>
         </DialogContent>
